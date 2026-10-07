@@ -1,0 +1,15 @@
+DEPLOY WITH GITHUB ACTIONS (not "Deploy from a branch")
+
+1. Unzip this package.
+2. Push ALL files to your GitHub repo root (index.html must be at root).
+3. Repo → Settings → Pages
+   - Build and deployment → Source: **GitHub Actions**
+   (Do NOT choose "Deploy from a branch")
+4. Push to main/master OR go to Actions → "Deploy to GitHub Pages" → Run workflow
+5. Wait until the workflow is green.
+6. Open the site URL shown in the Actions run or Settings → Pages
+
+File added:
+  .github/workflows/deploy-pages.yml
+
+That workflow uploads the whole repo and deploys it to GitHub Pages.
